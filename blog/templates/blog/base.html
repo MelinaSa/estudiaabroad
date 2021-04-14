@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Estudia Abroad</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'web_estudia/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'web_estudia/assets/img/favicon.ico' %}" rel="shortcut icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'web_estudia/assets/img/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'web_estudia/assets/img/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web_estudia/assets/img/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'web_estudia/assets/img/site.webmanifest' %}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'web_estudia/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web_estudia/assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web_estudia/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web_estudia/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'web_estudia/assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'web_estudia/assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web_estudia/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'blog/assets/css/base_template.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><span>Estudia Abroad</span></a></h1>
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="{% url 'home' %}#header">Home</a></li>
+            <li><a href="{% url 'home' %}#about">About</a></li>
+            <li><a href="{% url 'home' %}#services">Services</a></li>
+            <li><a href="{% url 'home' %}#contact">Contact</a></li>
+
+            <li class="get-started"><a href="{% url 'home' %}#about">Get Started</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+{% block content %}
+
+{% endblock %}
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Estudia Abroad</h3>
+          <p>
+            Borisova 30 Street <br>
+            Krasnoyarsk, Krasnoyarskiy kray, 660074 <br>
+            Russia <br><br>
+            <strong>whatsapp:</strong> +7 913 197 1940<br>
+            <strong>Email:</strong> estudiaabroad@gmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Policies</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Estudia Abroad</span></strong>. All Rights Reserved
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+      <a href="https://www.facebook.com/estudiaabroad" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/estudiaabroad" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'web_estudia/assets/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/counterup/counterup.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/venobox/venobox.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'web_estudia/assets/vendor/aos/aos.js' %}"></script>
+<!-- Template Main JS File -->
+<script src="{% static 'web_estudia/assets/js/main.js' %}"></script>
+
+</body>
+</html>
